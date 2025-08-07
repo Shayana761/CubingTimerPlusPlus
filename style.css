@@ -1,0 +1,135 @@
+/* Reset some defaults */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div {
+    flex: 1 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Existing styles below */
+
+body {
+    font-family: Cascadia Code, sans-serif;
+    background-color: #fff;
+    color: #212529;
+}
+
+header nav {
+    background-color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav > div.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#navbar-brand-id {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+button[aria-label="Toggle navigation"] {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none; /* hidden by default; enable in responsive if needed */
+}
+
+#navbar-collapse {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+a#navbar-collapse, a#nav-item-id {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+}
+
+div.container {
+    max-width: 1140px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+main[role="main"] {
+    padding-bottom: 3rem;
+}
+
+footer > div.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer a {
+    color: #6c757d;
+    text-decoration: underline;
+}
+
+#nav-item-id, #navbar-brand-id {
+    transition: all 0.5s ease-in-out;
+    background: none;
+    color: #000; /* fallback */
+}
+
+#nav-item-id:hover, #navbar-brand-id:hover {
+    background: linear-gradient(to bottom right, #00ff80, #cc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+}
+
+#MainContent {
+    text-align: center;
+}
+
+#StartBtn {
+    background-color: #00f7ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#StartBtn:hover {
+    background-color: #00bdc4;
+}
+
+#MainScreen {
+    background: linear-gradient(to bottom right, #00ff80, #cc00ff);
+}

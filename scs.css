@@ -1,0 +1,206 @@
+/* Reset some defaults */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body > div {
+    flex: 1 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+/* Existing styles below */
+
+body {
+    font-family: Cascadia Code, sans-serif;
+    background-color: #fff;
+    color: #212529;
+}
+
+header nav {
+    background-color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav > div.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#navbar-brand-id {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+button[aria-label="Toggle navigation"] {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none; /* hidden by default; enable in responsive if needed */
+}
+
+#navbar-collapse {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#navbar-collapse a#nav-item-id {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+}
+
+div.container {
+    max-width: 1140px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+main[role="main"] {
+    padding-bottom: 3rem;
+}
+
+footer > div.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+footer a {
+    color: #6c757d;
+    text-decoration: underline;
+}
+
+#nav-item-id, #navbar-brand-id {
+    transition: all 0.5s ease-in-out;
+    background: none;
+    color: #ffffff;
+}
+
+#nav-item-id:hover, #navbar-brand-id:hover {
+    background: linear-gradient(to bottom right, #00ff80, #cc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For Firefox */
+    color: transparent;
+}
+
+.ContentBox {
+    background: rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 10px;
+}
+
+.Btns {
+    background-color: #bbff00;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.Btns:hover {
+    background-color: #98cf00;
+}
+
+#ScrambleBtn {
+    background-color: #006eff;
+}
+
+#ScrambleBtn:hover {
+    background-color: #0058cc;
+}
+
+#Stopwatch {
+    font-size: 3em;
+}
+
+#Display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.Circles {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    margin: 10px;
+    border: solid 2px;
+}
+
+#MainScreen {
+    background: linear-gradient(to bottom right, #00ff80, #cc00ff);
+}
+
+#Container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 5px solid;
+    padding: 20px;
+    background-color: #ffffff1e;
+    justify-content: flex-start; /* left align children */
+    position: relative;
+}
+
+/* AvgBox fixed width, stays on the left */
+#AvgBox {
+    background: rgba(0, 0, 0, 0.192);
+    width: 220px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* TimerSection centered horizontally in the container */
+#StopwatchSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    /* center horizontally */
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    width: max-content;
+}

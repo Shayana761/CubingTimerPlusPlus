@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title id="NxN">3x3</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CubingTimer++</title>
+        <link rel="stylesheet"  href="/CSS/scs.css"/>
+    </head>
+    <body>
+        <header>
+        <nav>
+            <div>
+                <a href="index.html" id="navbar-brand-id">CubingTimer++</a>
+                
+                <button type="button" aria-label="Toggle navigation" onclick="toggleNavbar()">
+                    ☰
+                </button>
+                
+                <div id="navbar-collapse">
+                    <a href="index.html" id="nav-item-id">Home</a>
+                    <a href="privacy.html" id="nav-item-id">Privacy</a>
+                    <a href="sc2.html" id="nav-item-id">2x2</a>
+                    <a href="sc3.html" id="nav-item-id">3x3</a>
+                </div>
+            </div>
+        </nav>
+        </header>
+
+        <div id="MainScreen">
+            <main role="main">
+                <div class="ContentBox">
+                    <p>Welcome to the 3x3 timer!</p>
+                    <br><br>
+                    <button class="Btns" id="ScrambleBtn">Generate scramble</button>
+                    <p id="Result"></p>
+                    
+                    <hr>
+                    <br>
+                    <div id="Container">
+                        <div id="AvgBox">
+                            <h3 id="Time1">00:00:00</h3>
+                            <h3 id="Time2">00:00:00</h3>
+                            <h3 id="Time3">00:00:00</h3>
+                            <h3 id="Time4">00:00:00</h3>
+                            <h3 id="Time5">00:00:00</h3>
+                            <h3 id="Time6">00:00:00</h3>
+                            <h3 id="Time7">00:00:00</h3>
+                            <h3 id="Time8">00:00:00</h3>
+                            <h3 id="Time9">00:00:00</h3>
+                            <h3 id="Time10">00:00:00</h3>
+                            <h3 id="Time11">00:00:00</h3>
+                            <h3 id="Time12">00:00:00</h3>
+                        </div>
+                        <div id="StopwatchSection">
+                            <div id="Display">
+                                <div id="Circle1" class="Circles"></div>
+                                <h1 id="Stopwatch">00:00:00</h1>
+                                <div id="Circle2" class="Circles"></div>
+                            </div>
+                            <div id="Controls">
+                                <button class="Btns" id="StartBtn" onclick="Start()">Start Timer</button>
+                                <button class="Btns" id="ResetBtn" onclick="Reset()">Reset Timer</button>
+                                <button class="Btns" id="StopBtn" onclick="Stop()">Stop Timer</button>
+                            </div>
+                            <button class="Btns" id="ResetRunBtn">Reset Run</button>
+                            <h3 id="AO5">ao5</h3>
+                            <h3 id="AO12">ao12</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div>
+                &copy; 2025 - CubingTimer++ - <a href="privacy.html">Privacy</a>
+            </div>
+        </footer>
+
+        <script type="module" src="/JS/scs.js"></script>
+    </body>
+</html>
